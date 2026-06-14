@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APP Piscicultura</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <div>
+      <h1>APP Piscicultura</h1>
+      <p>Qualidade da água e manejo alimentar para cultivo de tilápias</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>1. Qualidade da Água</h2>
+      <p class="ajuda">Para valores decimais, utilize vírgula (,) ou ponto (.). Ex.: 28,5 ou 28.5</p>
+
+      <div class="grid-form">
+        <label>
+          Temperatura da água (°C)
+          <input id="tempAgua" type="text" placeholder="Ex.: 27,5" />
+        </label>
+
+        <label>
+          Transparência (cm)
+          <input id="transparencia" type="text" placeholder="Ex.: 35" />
+        </label>
+
+        <label>
+          pH
+          <input id="ph" type="text" placeholder="Ex.: 7,8" />
+        </label>
+
+        <label>
+          Oxigênio dissolvido (mg/L)
+          <input id="oxigenio" type="text" placeholder="Ex.: 5,2" />
+        </label>
+
+        <label>
+          Amônia total (mg/L)
+          <input id="amoniaTotal" type="text" placeholder="Ex.: 0,35" />
+        </label>
+      </div>
+
+      <button onclick="avaliarQualidadeAgua()">Avaliar qualidade da água</button>
+
+      <div id="resultadoAgua" class="resultado"></div>
+    </section>
+
+    <section class="card">
+      <h2>2. Manejo Alimentar</h2>
+      <p class="ajuda">Informe a quantidade de peixes, peso médio e temperatura para calcular a ração diária.</p>
+
+      <div class="grid-form">
+        <label>
+          Quantidade de peixes
+          <input id="qtdPeixes" type="text" placeholder="Ex.: 5000" />
+        </label>
+
+        <label>
+          Peso médio dos peixes (g)
+          <input id="pesoMedio" type="text" placeholder="Ex.: 120" />
+        </label>
+
+        <label>
+          Temperatura da água (°C)
+          <input id="tempManejo" type="text" placeholder="Ex.: 27" />
+        </label>
+      </div>
+
+      <button onclick="calcularManejoAlimentar()">Calcular manejo alimentar</button>
+
+      <div id="resultadoManejo" class="resultado"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ferramenta técnica sem armazenamento em banco de dados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

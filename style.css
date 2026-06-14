@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef6f8;
+  color: #1f2933;
+}
+
+.topo {
+  background: linear-gradient(135deg, #006d77, #00a6a6);
+  color: white;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.topo h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.topo p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 28px auto;
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #006d77;
+}
+
+.ajuda {
+  background: #e0f7fa;
+  border-left: 5px solid #00a6a6;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: 2px solid #00a6a6;
+  border-color: #00a6a6;
+}
+
+button {
+  margin-top: 20px;
+  background: #006d77;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00545c;
+}
+
+.resultado {
+  margin-top: 22px;
+  display: grid;
+  gap: 12px;
+}
+
+.item-resultado {
+  border-radius: 12px;
+  padding: 14px;
+  border-left: 6px solid #999;
+  background: #f8fafc;
+}
+
+.item-resultado h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+.item-resultado p {
+  margin: 4px 0;
+}
+
+.verde {
+  border-left-color: #16a34a;
+  background: #ecfdf3;
+}
+
+.amarelo {
+  border-left-color: #f59e0b;
+  background: #fffbeb;
+}
+
+.vermelho {
+  border-left-color: #dc2626;
+  background: #fef2f2;
+}
+
+.interpretacao {
+  padding: 16px;
+  border-radius: 12px;
+  background: #eef2ff;
+  border-left: 6px solid #4f46e5;
+}
+
+ul {
+  margin-top: 8px;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  padding: 24px;
+}
